@@ -28,7 +28,6 @@ class App extends Component {
         const api_call = await fetch(url)
         const data = await api_call.json()
 
-        console.log(this.data, url)
         if (city && country && data.cod !== "404") {
             this.setState({
                 temperature: data.main.temp,
