@@ -37,6 +37,7 @@
 
 body {
     font-family: "Open Sans", serif;
+    min-width: 600px;
 }
 
 .wrapper {
@@ -55,14 +56,7 @@ body {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.MuiGrid-typeContainer-1 {
-    height: 100%;
-}
-
-.MuiGrid-typeItem-2.MuiGrid-grid-xs-7-33 {
-    overflow: scroll;
+    min-width: 550px;
 }
 
 .title-container {
@@ -92,11 +86,6 @@ body {
     font-family: "Merriweather", serif;
 }
 
-.information-container {
-    background-color: #ebebeb;
-    height: 90vh;
-}
-
 button {
     border: 0;
     padding: 8px 20px;
@@ -116,13 +105,11 @@ button:active {
 }
 
 .weather__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 18px;
     font-weight: 200;
     letter-spacing: 2px;
+    height: calc(90vh - 227px);
+    overflow: scroll;
 }
 
 .weather__key {

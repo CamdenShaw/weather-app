@@ -7,7 +7,8 @@ const styles = theme => ({
     form: {
         display: "flex",
         flexFlow: "wrap",
-        padding: "60px 20px"
+        padding: "60px 20px",
+        height: "107px"
     },
     textField: {
         display: "flex",

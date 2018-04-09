@@ -21,15 +21,14 @@ class App extends Component {
         event.preventDefault()
 
         const { city, country } = event.target.elements
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${city.value},${
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value},${
             country.value
         }&appid=${API_KEY}&units=metric`
 
         const api_call = await fetch(url)
         const data = await api_call.json()
 
-        console.log(this.data)
-
+        console.log(this.data, url)
         if (city && country && data.cod !== "404") {
             this.setState({
                 temperature: data.main.temp,
